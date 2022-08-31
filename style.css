@@ -1,188 +1,181 @@
-
 .bg-img
-    { position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 70vh;
-        
-    }
-    .bg-img::before
-        {
-           content: " ";
-           background-image:url('bg-img.jpg');
-           position: absolute;
-           background-size: cover;
-           height: 100%;
-           width: 100%;
-           z-index: -1;
-           opacity: 0.9;}
-
-    .transbox {
-           position: relative;
-            margin: 70px ;
-            width: fit-content;
-            padding: 20px;
-            border: 1px solid white;
-            opacity: 1;
-            box-sizing: border-box;
-          }
-          @media (max-width: 800px)
-          {.transbox
-            { 
-              margin-top: 100px;
-              
-          }}
-    .content
-    {
-      color:aliceblue;
-      text-transform: uppercase;
-      font-size: 40px;
-      font-family: 'Lato', sans-serif;
-    }
+  { position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;  
+    background-image:url('bg-img.jpg'); 
+  }
+.transbox 
+  {
+    position: relative;
+    margin: 70px ;
+    width: fit-content;
+    padding: 20px;
+    border: 1px solid white;
+    opacity: 1;
+    box-sizing: border-box;
+  }
 @media (max-width: 800px)
-          {.content
-            { font-size: 30px;
-              
-          }}
-    
-
-
-    section {
-      min-height: 80vh;
-      width: 70%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 200px;
-      
-    }
-    .container {
-      width: 60%;
-      max-width: 1000px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .left {
-      width: 80%;
-      height: 500px;
-      background: url(overlap-img.jpg)
-        no-repeat center;
-      
-    }
-    .right {
-      width: 60%;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px;
-      padding-top: 70px;
-      
-      background-color: white;
-      
-      margin-left: -150px;
-      margin-top: 300px;
-    }
-    .right h1 {
-      font-size: 30px;
-      font-weight: lighter;
-      font-family:'Times New Roman', Times, serif;
-      text-transform: uppercase;
-      color: black;
-
-    }
-    .right p {
-      margin: 20px 0;
-      font-size: 15px;
-      text-transform: capitalize;
-      font-family:'Times New Roman', Times, serif;
-      color: black;
-    }
-    @media only screen and (max-width: 768px) {
-      section{
-        margin:100px;
-      }
-      .container {
-        flex-direction: column;
-        width: 100%;
-        margin: 0px;
-      }
-      .left {
-        margin:20px;
-        
-        width: 100%;
-        height: 400px;
-      }
-      .right {
-        width: 90%;
-        margin: 0;
-        margin-top: -100px;
-        
-      }
-      .right h1 {
-        font-size: 15px;
-      }
-      .right p{
-        font-size: 7px; }
-    }
-    .gallery{
-      margin:100px;
-      display:flex;
-     text-transform: uppercase;}
-    .gallery div:nth-child(2)
-    { margin-left: auto;}
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-   padding-left: 4px; }
-    
-    /* Create four equal columns that sits next to each other */
-    .column {
-      position: relative;
-      flex: 25%;
-      
-    }
-    .column img {
-      margin-left: 2px;
-      vertical-align: middle;
+  {
+  .transbox
+    { margin-top: 40px; }
+  }
+.content
+  {
+    color:aliceblue;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+  }
+@media (max-width: 800px)
+  {
+    .content
+    { font-size: 30px;}
+  }
+section 
+  {
+    min-height: 80vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;  
+  }
+.container 
+  {
+    width: 60%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+.left 
+  {
+    width: 80%;
+    height: 500px;
+    background: url(overlap-img.jpg)
+    no-repeat center;  
+  }
+.right 
+  {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 70px;  
+    background-color: white;  
+    margin-left: -150px;
+    margin-top: 300px;
+  }
+.right h1 
+  {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: black;
+  }
+.right p 
+  {
+    margin: 20px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+  }
+@media only screen and (max-width: 768px) 
+  {
+    section
+    {margin:100px;}
+    .container 
+    {
+      flex-direction: column;
       width: 100%;
+      margin: 0px;
     }
-    .overlay {
-      text-transform: uppercase;
-      position: absolute; 
-      bottom: 50px; 
-      color: #f1f1f1; 
+    .left 
+    {
+      margin:20px;  
       width: 100%;
-      transition: .5s ease;
-      opacity:1;
-      font-weight: lighter;
-      font-size: 20px;
-      letter-spacing: 2px;
-      color: white;
-      padding: 20px;  
+      height: 400px;
     }
-  
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-      .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
+    .right 
+    {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;  
       }
+    .right h1 
+    {font-size: 15px;}
+    .right p
+    {font-size: 7px; }
+  }
+.gallery
+  {
+    margin:100px;
+    display:flex;
+    text-transform: uppercase;
+  }
+.gallery div:nth-child(2)
+  { margin-left: auto;}
+.row 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4px; 
+  }    
+           /* Create four equal columns that sits next to each other */
+.column 
+  {
+    position: relative;
+    flex: 25%;  
+  }
+.column img 
+  {
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 100%;
+  }
+.overlay 
+  {
+    text-transform: uppercase;
+    position: absolute; 
+    bottom: 50px; 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:1;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    padding: 20px;  
+  }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) 
+{
+  .column 
+   {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
     }
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-      }
+}
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+{
+  .column 
+    {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
     }
-    a{
-      font-size: 13px;
-      text-transform: capitalize;
-    }
+}
+a
+  {
+    font-size: 13px;
+    text-transform: capitalize;
+}
